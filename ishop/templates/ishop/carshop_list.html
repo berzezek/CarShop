@@ -1,0 +1,72 @@
+
+{% extends 'ishop/main.html' %}
+{% block main_section %}
+{% for l in carshop %}
+
+
+
+{% endfor %}
+{% for item in carshop %}
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+  <div class="row align-items-center">
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+  </div>
+        <div class="row align-items-center">
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+    <div class="col text-center shadow-none p-3 mb-5 bg-light rounded">
+        <img src="{{ item.img_car.url }}" alt="{{ item.model_car }}" width="150px">
+        <h5 class="">{{ item.model_car }}</h5>
+        <p class="">{{ item.description_car|truncatechars:100 }}</p>
+        <span class="">{{ item.price_car }} {{ item.currency }}</span>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
